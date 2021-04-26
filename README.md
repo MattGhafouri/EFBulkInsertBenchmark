@@ -3,7 +3,7 @@
 
 In this project, I have implemented bulk insert in different ways and elapsed time was calculated for every technique.
 
-4 different techniques for bulk insert by Entity framework :
+4 different techniques for bulk insert by Entity framework and without it :
 
 
 1- EFCore.BulkExtensions => https://github.com/borisdj/EFCore.BulkExtensions
