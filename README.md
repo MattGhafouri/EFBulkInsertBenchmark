@@ -15,4 +15,6 @@ In this project, I have implemented bulk insert in different ways and elapsed ti
 4- Microsoft SqlBulkCopy => https://docs.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqlbulkcopy?view=dotnet-plat-ext-5.0
 
 
+
 you can add other techniques to this project
+ 
