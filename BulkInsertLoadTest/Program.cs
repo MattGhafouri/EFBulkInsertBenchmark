@@ -1,5 +1,6 @@
 ﻿using BulkInsertLoadTest.BulkInsertproviders.borisdj;
 using BulkInsertLoadTest.BulkInsertproviders.EFCore;
+using BulkInsertLoadTest.BulkInsertproviders.MicrosoftSqlBulkCopy;
 using BulkInsertLoadTest.BulkInsertproviders.zzz;
 using BulkInsertLoadTest.Helper;
 using System;
@@ -26,9 +27,15 @@ namespace BulkInsertLoadTest
                 var borisDjProviderResult = borisdjProvider.Insert(trx);
                 PrintResult("borisdj", objectCount, borisDjProviderResult);
 
+
                 trx = ObjectGenerator.GenerateTempTransaction(objectCount);
                 var addRangeResult = EFCoreAddRange.Insert(trx);
                 PrintResult("EF Add Range", objectCount, addRangeResult);
+
+
+                trx = ObjectGenerator.GenerateTempTransaction(objectCount);
+                var bulkInsertResult = new SqlBulkCopyProvider().Insert(trx).Result;
+                PrintResult("Sql Bulk Copy", objectCount, bulkInsertResult);
 
                 objectCount = ReadCount();
             }

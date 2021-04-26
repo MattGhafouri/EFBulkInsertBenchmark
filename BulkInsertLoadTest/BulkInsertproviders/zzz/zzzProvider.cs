@@ -11,7 +11,7 @@ namespace BulkInsertLoadTest.BulkInsertproviders.zzz
         public static TimeSpan Insert(List<Temporary_LoadTestForTransactionBulkInsert> trx)
         {
             var timer = new Stopwatch();
-            using var context = new RGSContext();
+            using var context = new YourContext();
 
 
 

@@ -13,7 +13,7 @@ namespace BulkInsertLoadTest.BulkInsertproviders.EFCore
         public static TimeSpan Insert(List<Temporary_LoadTestForTransactionBulkInsert> trx)
         {
             var timer = new Stopwatch();
-            using var context = new RGSContext();
+            using var context = new YourContext();
 
             timer.Start();
             context.ChangeTracker.AutoDetectChangesEnabled = false;

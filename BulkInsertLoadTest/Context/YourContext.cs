@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace BulkInsertLoadTest
 {
-    public partial class RGSContext : DbContext
+    public partial class YourContext : DbContext
     { 
          
 
