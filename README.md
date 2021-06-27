@@ -1,7 +1,7 @@
 
 # .Net Bulk Insert Benchmark
 
-In this project, I have implemented bulk insert in different ways and elapsed time was calculated for every technique.
+In this project, I have implemented bulk insert in different ways and elapsed time is calculated for every technique.
 
 4 different techniques for bulk insert by Entity framework and without it :
 
